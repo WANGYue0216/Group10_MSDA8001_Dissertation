@@ -15,7 +15,7 @@ This repository contains the analysis code and data for the project "Comparing T
   - **HDDM_Tutorial.docx**  
     A guide detailing the setup and use of the `dockerHDDM` environment, including Docker installation, image pulling, container execution, Jupyter Notebook access, and code execution steps, suitable for beginners.
   - **DIC_Folder**  
-    Contains Deviance Information Criterion (DIC) results for seven models (M0-M6). DIC evaluates model fit quality, with lower values indicating better models. Pre-computed DIC results are provided for initial selection of the best model (typically M5).
+    Contains Deviance Information Criterion (DIC) results for seven models (M0-M6). DIC evaluates model fit quality, with lower values indicating better models. Pre-computed DIC results are provided for initial selection of the best model.
   - **Analysis_Folder**  
     Includes Jupyter Notebooks and data files for analysis:
     - **HDDM_Compare.ipynb**: Validates the fit quality of models M0-M6 using DIC values, Posterior Predictive Checks (PPC), and convergence diagnostics, confirming the best model (typically M5).
@@ -47,13 +47,13 @@ This repository contains the analysis code and data for the project "Comparing T
    Upon container startup, the terminal will display a URL (e.g., `http://127.0.0.1:8888/?token=...`). Open this URL in a browser to access the Jupyter interface and view files in `/home/jovyan/work`.
 
 5. **Execute Analysis**  
-   - Review pre-computed DIC results in `DIC_Folder` to identify the best model among M0-M6 (typically M5).
+   - Review pre-computed DIC results in `DIC_Folder` to identify the best model among M0-M6.
    - Open `HDDM_Compare.ipynb` and run each cell to validate DIC results, assess model fit quality, PPC, and convergence diagnostics, confirming M5 as the best model.
    - Open `m5_HDDM.ipynb` and run each cell to analyze M5’s convergence, PPC, and parameter inference.
    - Ensure `HDDM_InconStim_6Frame.csv` is in the correct path; Notebooks will load the data automatically.
 
 6. **Result Interpretation**  
-   - Lower DIC values indicate better model fit, with M5 typically being the best.
+   - Lower DIC values indicate better model fit.
    - Verify MCMC convergence using trace plots, Gelman-Rubin statistic (R̂≈1.01), and effective sample size (ESS≥400).
    - PPC plots compare model-predicted and actual reaction time distributions.
    - ROPE+HDI methods assess the practical significance of parameter estimates.
@@ -64,20 +64,19 @@ This repository contains the analysis code and data for the project "Comparing T
 - `dockerHDDM` is based on HDDM 0.8, incorporating custom `hddm`, `kabuki`, and `ArviZ` tools.
 - MCMC sampling is computationally intensive (9750 trials may take ~3 hours); reduce sample size or chain number for initial testing.
 - Address convergence issues (ESS<400) by increasing sample size or adjusting parameters.
-- Refer to the [HDDM documentation](https://github.com/hcp4715/hddm) for additional guidance.
 
 ---
 
 ## PyDDM Instructions
 
-`PyDDM` is a Python-based Drift Diffusion Model (DDM) framework offering flexible model construction and rapid parameter estimation, ideal for studying the effects of SF and attention on decision-making.
+`PyDDM` is a Python-based Drift Diffusion Model (DDM) framework offering flexible model construction and rapid parameter estimation, ideal for studying the effects of SF and attention to decision-making.
 
 ### Folder Structure
 
 - **PyDDM**  
   The main directory, containing:
   - **BIC_Folder**  
-    Contains Bayesian Information Criterion (BIC) results for seven models (M0-M6). BIC balances model fit quality and complexity, with lower values indicating better models. Pre-computed BIC results are provided for initial selection of the best model (typically M3).
+    Contains Bayesian Information Criterion (BIC) results for seven models (M0-M6). BIC balances model fit quality and complexity, with lower values indicating better models. Pre-computed BIC results are provided for initial selection of the best model.
   - **Analysis_Folder**  
     Includes Python scripts and data files for analysis:
     - **m3_PyDDM.ipynb**: Performs detailed analysis of the best model M3 (lowest BIC), covering model fitting, diagnostics, fit quality visualization, and parameter estimation, examining SF and attention effects on drift rate and decision boundary.
@@ -113,12 +112,12 @@ This repository contains the analysis code and data for the project "Comparing T
    Open `m3_PyDDM.ipynb` in the browser, verifying the data file path.
 
 5. **Execute Analysis**  
-   - Review pre-computed BIC results in `BIC_Folder` to identify the best model among M0-M6 (typically M3).
-   - Open `m3_PyDDM.ipynb` and run each cell to fit the M3 model (1000 samples, 500 burn-in samples), evaluate fit quality, parameter estimation, and visualizations (e.g., reaction time distribution fit).
-   - Examine the effects of SF and attention on drift rate (v) and decision boundary (a).
+   - Review pre-computed BIC results in `BIC_Folder` to identify the best model among M0-M6.
+   - Open `m3_PyDDM.ipynb` and run each cell to fit the M3 model (the best model), evaluate fit quality, parameter estimation, and visualizations (e.g., reaction time distribution fit).
+   - Examine the effects of SF and attention to drift rate (v) and decision boundary (a).
 
 6. **Result Interpretation**  
-   - Lower BIC values indicate better model fit, with M3 typically being the best.
+   - Lower BIC values indicate better model fit.
    - Fit quality plots demonstrate the alignment of model-predicted and actual reaction time distributions.
    - Parameter estimates (e.g., drift rate, decision boundary) reflect the influence of SF and attention.
 
