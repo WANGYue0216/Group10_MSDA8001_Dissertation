@@ -141,7 +141,7 @@ This repository contains the analysis code and data for the project "Comparing T
   - **Analysis_Folder**  
     Includes R scripts and data files for analysis:
     - **M0_Incongruent_6.R**: A comprehensive script for the baseline model M0, covering model fitting, convergence diagnostics, posterior distribution visualization, and ROPE statistical inference.
-    - **modified_data2.txt**: Experimental behavioral data with 9750 trials of incongruent 6-frame spatial frequency stimuli, in tab-separated plain text format, including subject ID (subjID), choice, reaction time (rt), and other fields.
+    - **hBayesDM_data.txt**: Experimental behavioral data with 9750 trials of incongruent 6-frame spatial frequency stimuli, in tab-separated plain text format, including subject ID (subjID), choice, reaction time (rt), and other fields.
 
 ### Environment Setup and Execution Steps
 
@@ -156,7 +156,7 @@ This repository contains the analysis code and data for the project "Comparing T
    ```
 
 3. **Prepare Data**  
-   Ensure `modified_data2.txt` is in `hBayesDM/Analysis_Folder`, formatted as tab-separated plain text with column names matching hBayesDM requirements (e.g., subjID, choice, rt) and no missing values. Convert `HDDM_InconStim_6Frame.csv` to txt format if necessary.
+   Ensure `hBayesDM_data.txt.` is in `hBayesDM/Analysis_Folder`, formatted as tab-separated plain text with column names matching hBayesDM requirements (e.g., subjID, choice, rt) and no missing values. Convert `HDDM_InconStim_6Frame.csv` to txt format if necessary.
 
 4. **Run Analysis**  
    - Open RStudio and load `M0_Incongruent_6.R`.
