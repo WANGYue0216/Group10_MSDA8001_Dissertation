@@ -63,7 +63,7 @@ This repository contains the analysis code and data for the project "Comparing T
 
 - Delete old `db/traces` cache files before mounting the directory to avoid interference.
 - `dockerHDDM` is based on HDDM 0.8, incorporating custom `hddm`, `kabuki`, and `ArviZ` tools.
-- MCMC sampling is computationally intensive (9750 trials may take ~3 hours); reduce sample size or chain number for initial testing.
+- MCMC sampling is computationally intensive; reduce sample size or chain number for initial testing.
 - Address convergence issues (ESS<400) by increasing sample size or adjusting parameters.
 
 ---
