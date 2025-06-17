@@ -18,7 +18,7 @@ This repository contains the analysis code and data for the project "Comparing T
     Contains Deviance Information Criterion (DIC) results for seven models (M0-M6). DIC evaluates model fit quality, with lower values indicating better models. Pre-computed DIC results are provided for initial selection of the best model.
   - **Analysis_Folder**  
     Includes Jupyter Notebooks and data files for analysis:
-    - **HDDM_Compare.ipynb**: Validates the fit quality of models M0-M6 using DIC values, Posterior Predictive Checks (PPC), and convergence diagnostics, confirming the best model (typically M5).
+    - **HDDM_Compare.ipynb**: Validates the fit quality of models M0-M6 using DIC values, Posterior Predictive Checks (PPC), and convergence diagnostics, confirming the best model.
     - **m5_HDDM.ipynb**: Conducts detailed analysis of the best model M5 (lowest DIC), covering parameter estimation, convergence diagnostics, PPC, and ROPE+HDI statistical inference, exploring the effects of SF and attention on decision-making.
     - **HDDM_InconStim_6Frame.csv**: Experimental behavioral data with 9750 trials of incongruent 6-frame spatial frequency stimuli, formatted for HDDM input.
 
@@ -119,7 +119,7 @@ This repository contains the analysis code and data for the project "Comparing T
 6. **Result Interpretation**  
    - Lower BIC values indicate better model fit.
    - Fit quality plots demonstrate the alignment of model-predicted and actual reaction time distributions.
-   - Parameter estimates (e.g., drift rate, decision boundary) reflect the influence of SF and attention.
+   - Parameter estimates (e.g., drift rate, boundary separation) reflect the influence of SF and attention.
 
 ### Notes
 
@@ -141,7 +141,7 @@ This repository contains the analysis code and data for the project "Comparing T
   - **Analysis_Folder**  
     Includes R scripts and data files for analysis:
     - **M0_Incongruent_6.R**: A comprehensive script for the baseline model M0, covering model fitting, convergence diagnostics, posterior distribution visualization, and ROPE statistical inference.
-    - **hBayesDM_data.txt**: Experimental behavioral data with 9750 trials of incongruent 6-frame spatial frequency stimuli, in tab-separated plain text format, including subject ID (subjID), choice, reaction time (rt), and other fields.
+    - **hBayesDM_data.txt**: Experimental behavioral data with 9750 trials of incongruent 6-frame spatial frequency stimuli in tab-separated plain text format, including subject ID, choice, reaction time, and other fields.
 
 ### Environment Setup and Execution Steps
 
