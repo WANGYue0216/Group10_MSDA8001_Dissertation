@@ -1,4 +1,5 @@
-# Drift Diffusion Modeling Analysis for Emotion-Guided Perceptual Decision-Making
+# Comparing Three Drift Diffusion Modeling Frameworks to Investigate Emotion-Guided Perceptual Decision-Making
+
 
 This repository contains the analysis code and data for the project "Comparing Three Drift Diffusion Modeling Frameworks to Investigate Emotion-Guided Perceptual Decision-Making." It employs the `dockerHDDM`, `PyDDM`, and `hBayesDM` frameworks to investigate the effects of spatial frequency (SF) and attention on emotion-guided decision-making. Below are the setup and execution instructions for each framework.
 
