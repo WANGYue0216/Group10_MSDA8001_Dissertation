@@ -185,7 +185,7 @@ This repository contains the analysis code and data for the project "Comparing T
 ## Contact Information
 
 For inquiries, please contact:
-- Lin Zexi (`u3582512@connect.hku.hk`)
+- Lin Zexi (`leslielinzx@connect.hku.hk`)
 - Wang Yue (`u3642728@connect.hku.hk`)
 - Yang Xueqian (`u3642733@connect.hku.hk`)
 - Supervisor: Professor Jin Jingwen Frances
